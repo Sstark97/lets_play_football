@@ -15,6 +15,16 @@ module.exports = {
     react: {
       version: "detect",
     },
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@customTypes", "./src/types"],
+          ["@containers", "./src/containers"],
+          ["@components", "./src/components"],
+        ],
+        "extensions": [".ts", ".tsx"]
+      }
+    }
   },
   rules: {
     "prettier/prettier": [0],

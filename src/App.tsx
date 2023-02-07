@@ -1,9 +1,11 @@
+import Layout from "@containers/Layout"
+
 const App = () => {
 
   return (
-    <div className="App">
+    <Layout>
       <h1>Hola</h1>
-    </div>
+    </Layout>
   )
 }
 
