@@ -6,20 +6,15 @@ module.exports = {
     "plugin:import/recommended", 
     "plugin:jsx-a11y/recommended", 
     "plugin:@typescript-eslint/recommended", 
-    "eslint-config-prettier"
+    "eslint-config-prettier",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
   ],
   settings: {
     react: {
       version: "detect",
     },
-
-    "settings": {
-      "import/resolver": {
-        "node": {
-          "extensions": [".ts", ".tsx", ".native.js"]
-        }
-      }
-    }
   },
   rules: {
     "prettier/prettier": [0],
