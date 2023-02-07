@@ -1,6 +1,5 @@
 import { defineConfig, loadEnv, splitVendorChunkPlugin } from "vite"
 import react from "@vitejs/plugin-react"
-import eslintPlugin from "vite-plugin-eslint"
 import { resolve } from "path"
 
 const getAlliases = () => {
@@ -27,7 +26,7 @@ export default defineConfig(({ command, mode }) => {
     }
   } else {
     return {
-      plugins: [react(), splitVendorChunkPlugin(), eslintPlugin()],
+      plugins: [react(), splitVendorChunkPlugin()],
       build: {
         outDir: "build",
         chunkSizeWarningLimit: 1000,

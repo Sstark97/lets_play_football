@@ -1,10 +1,11 @@
 import Layout from "@containers/Layout"
+import Header from "@components/Header"
 
 const App = () => {
 
   return (
     <Layout>
-      <h1>Hola</h1>
+      <Header />
     </Layout>
   )
 }

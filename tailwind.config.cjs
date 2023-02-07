@@ -3,8 +3,10 @@
 module.exports = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
-    colors: {
-      "bg-paris": "#085eb1"
+    extend: {
+      colors: {
+        "paris": "#085eb1"
+      }
     }
   },
   plugins: [],
