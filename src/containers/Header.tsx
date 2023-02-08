@@ -3,7 +3,7 @@ import { RiFootballLine } from "react-icons/ri"
 
 const Header = () => {
   return (
-    <header className="w-screen h-20 text-paris text-lg">
+    <header className="w-screen h-20 text-paris text-lg lg:h-16">
       <nav className="w-full h-full flex border-b-[1px] border-paris">
         <div className="w-1/5 flex items-center justify-center lg:w-[6%]">
           <RiFootballLine className="text-4xl fill-white bg-paris border-4 border-paris rounded-xl"/>
