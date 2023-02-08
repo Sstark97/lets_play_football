@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react"
 import Layout from "@containers/Layout"
 import Header from "@components/Header"
-import type { Team } from "@customTypes/team"
-import Logo from "@components/Logo"
+import Team from "@containers/Team"
+import type { Team as TeamType } from "@customTypes/team"
 
 const App = () => {
-  const [team, setTeam] = useState<Team>({} as Team)
+  const [team, setTeam] = useState<TeamType>({} as TeamType)
 
   useEffect(() => {
     const fetchFootball = async () => {
@@ -24,7 +24,7 @@ const App = () => {
   return (
     <Layout>
       <Header />
-      <Logo image={team.icon} alt={team.name}/>
+      <Team team={team} />
     </Layout>
   )
 }

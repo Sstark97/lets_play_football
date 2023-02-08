@@ -3,6 +3,14 @@ interface Logo {
     alt: string;
 }
 
+interface TeamInfo {
+    name: string, 
+    country: string, 
+    players: number, 
+    age: number
+}
+
 export type {
-    Logo
+    Logo,
+    TeamInfo
 }
