@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import Layout from "@containers/Layout"
 import Header from "@components/Header"
 import Team from "@containers/Team"
+import Players from "@containers/Players"
 import type { Team as TeamType } from "@customTypes/team"
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
     <Layout>
       <Header />
       <Team team={team} />
+      <Players players={team?.players}/>
     </Layout>
   )
 }
