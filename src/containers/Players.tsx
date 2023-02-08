@@ -4,7 +4,7 @@ import type { Players } from "@customTypes/containers"
 
 const Players = ({ players }: Players) => {
   return players ? (
-    <div>
+    <div className="flex flex-wrap">
       {players.map((player) => (
         <Player key={uuidv4()} {...player} />
       ))}
