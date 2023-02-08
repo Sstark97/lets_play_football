@@ -19,8 +19,6 @@ const App = () => {
     fetchFootball()
   }, [])
 
-  console.log(team)
-
   return (
     <Layout>
       <Header />
