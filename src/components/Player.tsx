@@ -5,7 +5,7 @@ const Player = ({ name, lastname, photo, position }: Player) => {
 
   return (
     <div className="flex p-3 lg:w-1/3 lg:p-8">
-        <img className="w-2/5 mr-8" src={photo} alt={name} />
+        <img className="object-cover w-2/5 mr-8" src={photo} alt={name} />
         <div>
             <p className="text-xl font-semibold">{`${name} ${lastname}`}</p>
             <p className="text-lg font-semibold text-slate-400">{positionCapitalized}</p>
