@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react"
 import Layout from "@containers/Layout"
-import Header from "@containers/Header"
-import Footer from "@components/Footer"
 import Team from "@containers/Team"
 import Players from "@containers/Players"
 import type { Team as TeamType } from "@customTypes/team"
@@ -23,10 +21,8 @@ const App = () => {
 
   return (
     <Layout>
-      <Header />
       <Team team={team} />
       <Players players={team?.players}/>
-      <Footer />
     </Layout>
   )
 }
