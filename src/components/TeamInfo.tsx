@@ -10,13 +10,13 @@ const TeamInfo = ({ name, country, players, age }: TeamInfo) => {
             <h2 className="text-2xl text-slate-300 font-semibold">{countryCapitalize}</h2>
         </div>
         <div className="pt-4">
-            <p className="text-lg text-white font-medium">INFO</p>
-            <div className="w-[25%] flex justify-around ml-8">
-                <p className="text-lg text-white font-medium">Players</p>
+            <p className="text-lg text-white font-medium opacity-90">INFO</p>
+            <div className="w-[25%] flex justify-around ml-8 lg:m-0 lg:w-[15%] lg:mt-4 lg:ml-4">
+                <p className="text-lg text-white font-medium opacity-90">Players</p>
                 <div className="text-lg text-slate-300 font-medium">{players}</div>
             </div>
-            <div className="w-[30%] flex justify-around ml-10">
-                <p className="text-lg text-white font-medium">Age</p>
+            <div className="w-[30%] flex justify-around ml-10 lg:m-0 lg:w-[22%] lg:ml-4">
+                <p className="text-lg text-white font-medium opacity-90">Age</p>
                 <p className="text-lg text-slate-300 font-medium">{age} YEARS</p>
             </div>
         </div>
