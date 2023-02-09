@@ -6,7 +6,9 @@
       "@assets/*": ["assets/*"],
       "@components/*": ["components/*"],
       "@containers/*": ["containers/*"],
-      "@customTypes/*": ["types/*"]
+      "@customTypes/*": ["types/*"],
+      "@pages/*": ["pages/*"],
+      "@routes/*": ["routes/*"]
     },
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],

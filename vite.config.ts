@@ -7,7 +7,9 @@ const getAlliases = () => {
     "@assets": resolve("src/assets"),
     "@components": resolve("src/components"),
     "@containers": resolve("src/containers"),
-    "@customTypes": resolve("src/types")
+    "@customTypes": resolve("src/types"),
+    "@pages": resolve("src/pages"),
+    "@routes": resolve("src/routes"),
   }
 }
 
