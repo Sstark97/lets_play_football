@@ -8,6 +8,9 @@ module.exports = {
       colors: {
         paris: "#085eb1",
       },
+      fontFamily: {
+        "sf-pro": ["SF Pro Display", "sans-serif"],
+      },
     },
   },
   plugins: [],

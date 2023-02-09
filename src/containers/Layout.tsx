@@ -4,7 +4,7 @@ import type { Children } from "@customTypes/global"
 
 const Layout = ({ children }: Children) => {
   return (
-    <div>
+    <div className="font-sf-pro">
       <Header />
       { children }
       <Footer />
