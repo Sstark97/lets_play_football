@@ -1,12 +1,12 @@
 import { lazy } from "react"
-import { Routes } from "@customTypes/routes";
-import App from "@routes/App";
+import { Routes } from "@customTypes/global";
 
 /**
  * These dynamics imports implement lazy load
  * and incresea the performance of the App
  */
 const Home = lazy(() => import("@pages/Home"))
+const Player = lazy(() => import("@pages/Player"))
 
 /**
  * These way to define the router give the posibility
@@ -15,10 +15,10 @@ const Home = lazy(() => import("@pages/Home"))
  */
 const ROUTER: Routes[] = [
   { route: "/", element: Home },
-//   { route: "/player", element:  },
+  { route: "/player", element: Player},
 //   { route: "*", element: NotFound },
 ]
 
 export {
-    ROUTER
+  ROUTER
 }

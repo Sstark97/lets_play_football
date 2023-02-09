@@ -21,6 +21,8 @@ module.exports = {
           ["@customTypes", "./src/types"],
           ["@containers", "./src/containers"],
           ["@components", "./src/components"],
+          ["@pages", "./src/pages"],
+          ["@routes", "./src/routes"]
         ],
         "extensions": [".ts", ".tsx"]
       }

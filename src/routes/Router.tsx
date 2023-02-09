@@ -1,6 +1,6 @@
 import { Suspense } from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { ROUTER } from "../const"
+import { ROUTER } from "./routes"
 import Layout from "@containers/Layout"
 
 const Router = () => {
