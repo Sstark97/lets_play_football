@@ -8,7 +8,8 @@
       "@containers/*": ["containers/*"],
       "@customTypes/*": ["types/*"],
       "@pages/*": ["pages/*"],
-      "@routes/*": ["routes/*"]
+      "@routes/*": ["routes/*"],
+      "@context/*": ["context/*"]
     },
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],

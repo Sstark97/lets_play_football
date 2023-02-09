@@ -1,5 +1,10 @@
-import Router from "@routes/App"
+import { FootballProvider } from "@context/FootballProvider"
+import Router from "@routes/Router"
 
-const App = () => <Router />
+const App = () => (
+    <FootballProvider>
+        <Router />
+    </FootballProvider>
+)
 
 export default App
