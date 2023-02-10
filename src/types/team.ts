@@ -23,8 +23,13 @@ interface Teams {
     team: Team;
 }
 
+interface PlayerWithLogo extends Player{
+    logo: string
+}
+
 export type {
     Player,
     Team,
-    Teams
+    Teams,
+    PlayerWithLogo
 }

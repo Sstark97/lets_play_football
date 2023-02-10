@@ -1,13 +1,13 @@
 import { useState, useEffect, createContext } from "react"
 import type { Children, Context} from "@customTypes/global"
-import type { Team, Player} from "@customTypes/team"
+import type { Team, PlayerWithLogo} from "@customTypes/team"
 
 const FootballContext = createContext<Context>({} as Context)
 
 const FootballProvider = ({ children }: Children) => {
   const { Provider } = FootballContext
   const [team, setTeam] = useState<Team>({} as Team)
-  const [player, setPlayer] = useState<Player>({} as Player)
+  const [player, setPlayer] = useState<PlayerWithLogo>({} as PlayerWithLogo)
 
   useEffect(() => {
     const fetchFootball = async () => {
@@ -25,7 +25,8 @@ const FootballProvider = ({ children }: Children) => {
     const searchPlayer = team.players.find(player => player.name === name)
 
     if (searchPlayer) {
-      setPlayer(searchPlayer)
+      const playerWithLogo: PlayerWithLogo = {...searchPlayer, logo: team.icon}
+      setPlayer(playerWithLogo)
     }
   }
 
