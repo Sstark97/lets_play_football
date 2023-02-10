@@ -1,3 +1,5 @@
+import PlayerImg from "@components/PlayerImg";
+import PlayerInfo from "@components/PlayerInfo";
 import usePlayer from "@hooks/usePlayer";
 
 const Player = () => {
@@ -6,7 +8,10 @@ const Player = () => {
   console.log(player)
 
   return (
-    player ? <div>{player.name}</div> : null
+    player ? <div>
+      <PlayerImg image={player.photo} icon={player.logo} alt={player.name} />
+      <PlayerInfo player={player} />
+    </div> : null
   )
 }
 

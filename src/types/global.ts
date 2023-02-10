@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Player, Team } from "@customTypes/team";
+import { PlayerWithLogo, Team } from "@customTypes/team";
 
 interface Children {
     children: ReactNode
@@ -12,7 +12,7 @@ interface Routes {
 
 interface Context {
     team: Team,
-    player: Player,
+    player: PlayerWithLogo,
     handleSetPlayer(name: string):void
 }
   
