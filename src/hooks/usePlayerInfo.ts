@@ -12,7 +12,7 @@ const usePlayerInfo = (player: PlayerWithLogo): ReturnPlayerInfo => {
   const formatedPlayer: PlayerFormated = {
     ...excludeFeet,
     birthday: formatedBirthday,
-    feet,
+    feet: feet.toUpperCase(),
     age
   }
 
