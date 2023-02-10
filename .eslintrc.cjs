@@ -23,7 +23,8 @@ module.exports = {
           ["@components", "./src/components"],
           ["@pages", "./src/pages"],
           ["@routes", "./src/routes"],
-          ["@context", "./src/context"]
+          ["@context", "./src/context"],
+          ["@hooks", "./src/hooks"]
         ],
         "extensions": [".ts", ".tsx"]
       }

@@ -9,7 +9,8 @@
       "@customTypes/*": ["types/*"],
       "@pages/*": ["pages/*"],
       "@routes/*": ["routes/*"],
-      "@context/*": ["context/*"]
+      "@context/*": ["context/*"],
+      "@hooks/*": ["hooks/*"]
     },
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],

@@ -1,20 +1,12 @@
-import { useContext, useEffect } from "react"
-import { useSearchParams } from "react-router-dom"
-import { FootballContext } from "@context/FootballProvider"
+import usePlayer from "@hooks/usePlayer";
 
 const Player = () => {
-  const [searchParams] = useSearchParams()
-  const playerName = searchParams.get("name") as string
-  const { player, handleSetPlayer } = useContext(FootballContext);
+  const { player } = usePlayer()
 
-  useEffect(() => {
-    handleSetPlayer(playerName)
-  }, [])
+  console.log(player)
 
   return (
-    <div>
-        {playerName}
-    </div>
+    player ? <div>{player.name}</div> : null
   )
 }
 
