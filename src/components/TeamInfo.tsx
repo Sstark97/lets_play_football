@@ -5,7 +5,7 @@ const TeamInfo = ({ name, country, players, age }: TeamInfo) => {
   const countryCapitalize = capitalize(country)
 
   return (
-    <div className="bg-paris p-5 pb-8 lg:lg:w-3/4">
+    <article className="bg-paris p-5 pb-8 lg:lg:w-3/4">
         <div className="pb-8 border-b-2 border-slate-50 border-opacity-40">
             <h1 className="text-3xl text-white font-semibold">{name}</h1>
             <h2 className="text-2xl text-slate-300 font-semibold">{countryCapitalize}</h2>
@@ -21,7 +21,7 @@ const TeamInfo = ({ name, country, players, age }: TeamInfo) => {
                 <p className="text-lg text-slate-300 font-medium">{age} YEARS</p>
             </div>
         </div>
-    </div>
+    </article>
   )
 }
 

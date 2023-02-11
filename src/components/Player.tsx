@@ -7,7 +7,7 @@ const Player = ({ name, lastname, photo, position }: Player) => {
 
   return (
     <Link to={`player?name=${name}`} className="w-full flex p-3 lg:w-1/3 lg:px-8 lg:py-0 lg:pt-3">
-      <div className="w-2/5 mr-8 bg-neutral-900">
+      <article className="w-2/5 mr-8 bg-neutral-900">
         <img
           className="w-full text-white text-center object-cover"
           src={photo}
@@ -17,11 +17,11 @@ const Player = ({ name, lastname, photo, position }: Player) => {
             currentTarget.src = `https://fakeimg.pl/1765x994/000/?text=${name}`
           }}
         />
-      </div>
-      <div className="mt-2">
+      </article>
+      <article className="mt-2">
         <p className="text-xl font-semibold lg:text-lg">{`${name} ${lastname}`}</p>
         <p className="text-lg font-semibold text-slate-400 lg:text-sm">{positionCapitalized}</p>
-      </div>
+      </article>
     </Link>
   )
 }
