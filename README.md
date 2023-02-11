@@ -87,6 +87,8 @@ In this view the user will be able to see the details of the player
 ## NotFound
 If the user write another path in the url he see this view.
 
+![](https://i.imgur.com/djoa8jF.png)
+
 <p align="right">(<a href="#readme-top">Return to top</a>)</p>
 
 <!-- ROADMAP -->
