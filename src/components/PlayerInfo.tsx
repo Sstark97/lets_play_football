@@ -1,7 +1,8 @@
+import usePlayer from "@hooks/usePlayer"
 import usePlayerInfo from "@hooks/usePlayerInfo"
-import type { PlayerInfo } from "@customTypes/components"
 
-const PlayerInfo = ({ player }: PlayerInfo) => {
+const PlayerInfo = () => {
+  const { player } = usePlayer()
   const { player: formatedPlayer } = usePlayerInfo(player)
 
 

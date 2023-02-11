@@ -1,10 +1,13 @@
-import type { PlayerImg } from "@customTypes/components"
+import usePlayer from "@hooks/usePlayer"
 
-const PlayerImg = ({ image, icon, alt}: PlayerImg) => {
+const PlayerImg = () => {
+  const { player } = usePlayer()
+  const { name, photo, logo } = player
+  
   return (
     <div className="flex justify-center bg-neutral-900 lg:w-[27%] lg:h-[27%] lg:m-8 relative">
-        <img className="w-full lg:w-2/5" src={image} alt={alt} />
-        <img className="absolute w-[15%] bottom-3 right-5" src={icon} alt={alt}/>
+        <img className="w-full lg:w-2/5" src={photo} alt={name} />
+        <img className="absolute w-[15%] bottom-3 right-5" src={logo} alt={name}/>
     </div>
   )
 }

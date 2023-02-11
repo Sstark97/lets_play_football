@@ -1,5 +1,3 @@
-import { PlayerWithLogo } from "./team";
-
 interface Logo {
     image: string;
     alt: string;
@@ -12,17 +10,7 @@ interface TeamInfo {
     age: number
 }
 
-interface PlayerImg extends Logo {
-    icon: string
-}
-
-interface PlayerInfo {
-    player: PlayerWithLogo
-}
-
 export type {
     Logo,
     TeamInfo,
-    PlayerImg,
-    PlayerInfo
 }

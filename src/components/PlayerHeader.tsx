@@ -1,6 +1,7 @@
-import type { PlayerInfo } from "@customTypes/components"
+import usePlayer from "@hooks/usePlayer"
 
-const PlayerHeader = ({ player }: PlayerInfo) => {
+const PlayerHeader = () => {
+  const { player } = usePlayer()
   const { name, lastname, position, number } = player
   const positionCapitalized = `${position?.charAt(0).toUpperCase()}${position?.slice(1)}`
 
