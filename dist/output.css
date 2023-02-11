@@ -833,6 +833,10 @@ video {
   padding-top: 1rem;
 }
 
+.pr-8 {
+  padding-right: 2rem;
+}
+
 .text-left {
   text-align: left;
 }

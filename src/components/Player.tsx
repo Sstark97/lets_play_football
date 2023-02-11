@@ -6,7 +6,7 @@ const Player = ({ name, lastname, photo, position }: Player) => {
   const positionCapitalized = capitalize(position)
 
   return (
-    <Link to={`player?name=${name}`} className="flex p-3 lg:w-1/3 lg:px-8 lg:py-0 lg:pt-3">
+    <Link to={`player?name=${name}`} className="w-full flex p-3 lg:w-1/3 lg:px-8 lg:py-0 lg:pt-3">
         <div className="w-2/5 mr-8 bg-neutral-900">
           <img className="w-full text-white text-center object-cover" src={photo} alt={name} />
         </div>
