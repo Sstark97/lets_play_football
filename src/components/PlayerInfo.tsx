@@ -15,7 +15,7 @@ const PlayerInfo = () => {
           playerData.map((info, index) => (
             <div key={uuidv4()} className="w-[95%] flex justify-between text-white mt-2 lg:w-[30%]">
               <div className="w-[50%] text-right">{info[0].toUpperCase()}</div>
-              <div className={`${ index !== 0 ? "w-[40%]" : ""} text-left opacity-70`}>{info[1]}</div>
+              <div className={`${ index !== 0 ? "w-[40%] text-left" : "text-right"} opacity-70`}>{info[1]}</div>
             </div>
           ))
         }
