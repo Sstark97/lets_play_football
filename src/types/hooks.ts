@@ -1,8 +1,10 @@
 import type { PlayerWithLogo } from "./team"
 
-interface PlayerFormated extends Omit<PlayerWithLogo, "rightFeet"> {
+interface PlayerFormated extends Pick<PlayerWithLogo, "birthday"> {
   age: number,
-  feet: string
+  feet: string,
+  height: string,
+  weight: string
 }
 
 interface ReturnPlayerInfo {

@@ -7,13 +7,12 @@ const usePlayerInfo = (player: PlayerWithLogo): ReturnPlayerInfo => {
   const age = moment().diff(player.birthday, "years", false)
   const feet = player.rightFeet ? "right" : "left"
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const {rightFeet, ...excludeFeet} = player
   const formatedPlayer: PlayerFormated = {
-    ...excludeFeet,
     birthday: formatedBirthday,
+    age,
+    height: `${player.height} CM`,
+    weight: `${player.weight} KG`,
     feet: feet.toUpperCase(),
-    age
   }
 
   return {

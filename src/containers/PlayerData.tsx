@@ -3,7 +3,7 @@ import PlayerInfo from "@components/PlayerInfo";
 
 const PlayerData = () => {
   return (
-    <div>
+    <div className="px-5">
       <PlayerHeader />
       <PlayerInfo />
     </div>
