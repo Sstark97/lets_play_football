@@ -11,7 +11,7 @@ const FootballProvider = ({ children }: Children) => {
 
   useEffect(() => {
     const fetchFootball = async () => {
-      const response = await fetch("../teams.json")
+      const response = await fetch("/teams.json")
       const data = await response.json()
       const { team: currentTeam } = data
 
