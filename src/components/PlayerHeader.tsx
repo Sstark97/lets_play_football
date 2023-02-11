@@ -1,9 +1,10 @@
 import usePlayer from "@hooks/usePlayer"
+import capitalize from "@utils/capitalize"
 
 const PlayerHeader = () => {
   const { player } = usePlayer()
   const { name, lastname, position, number } = player
-  const positionCapitalized = `${position?.charAt(0).toUpperCase()}${position?.slice(1)}`
+  const positionCapitalized = capitalize(position)
 
   return (
     <div className="flex justify-between items-center border-b-2 border-slate-50 border-opacity-40 mt-4 pb-8 ">

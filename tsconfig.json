@@ -10,7 +10,8 @@
       "@pages/*": ["pages/*"],
       "@routes/*": ["routes/*"],
       "@context/*": ["context/*"],
-      "@hooks/*": ["hooks/*"]
+      "@hooks/*": ["hooks/*"],
+      "@utils/*": ["utils/*"]
     },
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],

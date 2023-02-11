@@ -1,7 +1,8 @@
+import capitalize from "@utils/capitalize"
 import type { TeamInfo } from "@customTypes/components"
 
 const TeamInfo = ({ name, country, players, age }: TeamInfo) => {
-  const countryCapitalize = `${country?.charAt(0).toUpperCase()}${country?.slice(1)}`
+  const countryCapitalize = capitalize(country)
 
   return (
     <div className="bg-paris p-5 pb-8 lg:lg:w-3/4">

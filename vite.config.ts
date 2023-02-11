@@ -11,7 +11,8 @@ const getAlliases = () => {
     "@pages": resolve("src/pages"),
     "@routes": resolve("src/routes"),
     "@context": resolve("src/context"),
-    "@hooks": resolve("src/hooks")
+    "@hooks": resolve("src/hooks"),
+    "@utils": resolve("src/utils")
   }
 }
 

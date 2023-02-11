@@ -24,7 +24,8 @@ module.exports = {
           ["@pages", "./src/pages"],
           ["@routes", "./src/routes"],
           ["@context", "./src/context"],
-          ["@hooks", "./src/hooks"]
+          ["@hooks", "./src/hooks"],
+          ["@utils", "./src/utils"]
         ],
         "extensions": [".ts", ".tsx"]
       }
