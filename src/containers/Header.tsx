@@ -13,7 +13,7 @@ const Header = () => {
           <RiFootballLine className="text-4xl fill-white bg-paris border-[6px] border-paris rounded-full"/>
         </Link>
         <div className="w-3/5 flex justify-around items-center border-x-[1px] border-paris lg:w-[88%] lg:justify-start">
-          <Link to="player?name=Lionel" className={`font-semibold lg:mx-16 ${isPlayerPath ? "text-active" : ""}`}>PLAYERS</Link>
+          <Link to="#" className={`font-semibold lg:mx-16 ${isPlayerPath ? "text-active" : ""}`}>PLAYERS</Link>
           <Link to="/" className={`font-semibold ${!isPlayerPath ? "text-active" : ""}`}>TEAMS</Link>
         </div>
         <div className="w-1/5 flex items-center justify-center lg:w-[8%]">

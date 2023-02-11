@@ -75,7 +75,7 @@ In this section you will see the different views
 
 ## Home
 In this view the user will be able to see the players of the team, having the option of clicking on any of them to see more details. 
-If you click on Teams or on the logo, you will be redirected to Home and if you click on Player, you will be redirected to the player's view with Messi's data
+If you click on Teams or on the logo, you will be redirected to Home.
 
 ![](https://i.imgur.com/1VAU478.png)
 
