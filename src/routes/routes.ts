@@ -7,6 +7,7 @@ import { Routes } from "@customTypes/global";
  */
 const Home = lazy(() => import("@pages/Home"))
 const Player = lazy(() => import("@pages/Player"))
+const NotFound = lazy(() => import("@pages/NotFound"))
 
 /**
  * These way to define the router give the posibility
@@ -16,7 +17,7 @@ const Player = lazy(() => import("@pages/Player"))
 const ROUTER: Routes[] = [
   { route: "/", element: Home },
   { route: "/player", element: Player},
-//   { route: "*", element: NotFound },
+  { route: "*", element: NotFound },
 ]
 
 export {
