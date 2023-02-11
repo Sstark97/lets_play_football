@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         paris: "#085eb1",
+        active: "#ef8035"
       },
       fontFamily: {
         "sf-pro": ["SF Pro Display", "sans-serif"],
