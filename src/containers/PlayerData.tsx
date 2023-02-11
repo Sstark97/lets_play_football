@@ -3,7 +3,7 @@ import PlayerInfo from "@components/PlayerInfo";
 
 const PlayerData = () => {
   return (
-    <div className="px-5">
+    <div className="px-5 lg:w-[75%]">
       <PlayerHeader />
       <PlayerInfo />
     </div>

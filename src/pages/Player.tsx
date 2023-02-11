@@ -2,7 +2,7 @@ import PlayerImg from "@components/PlayerImg"
 import PlayerData from "@containers/PlayerData"
 
 const Player = () => (
-  <div className="bg-paris pb-8 lg:lg:w-3/4">
+  <div className="bg-paris pb-8 lg:flex lg:items-start lg:pb-0 lg:p-8">
     <PlayerImg />
     <PlayerData />
   </div>

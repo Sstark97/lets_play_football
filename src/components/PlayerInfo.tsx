@@ -7,8 +7,6 @@ const PlayerInfo = () => {
   const { player: formatedPlayer } = usePlayerInfo(player)
   const playerData = Object.entries(formatedPlayer)
 
-  console.log(playerData)
-
   return (
     <div className="pt-4">
       <p className="text-lg text-white font-medium opacity-90">PROFILE</p>
